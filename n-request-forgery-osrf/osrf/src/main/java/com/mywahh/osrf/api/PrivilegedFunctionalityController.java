@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class PrivelegedFunctionalityController {
+public class PrivilegedFunctionalityController {
 
     @RequestMapping("/privilegedAction")
     public String privilegedAction(){
