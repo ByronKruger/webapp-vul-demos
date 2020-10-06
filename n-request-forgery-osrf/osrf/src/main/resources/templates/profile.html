@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <form action="/unsafeUsernameUpdate" method="post">
+        <input name="username" type="text">
+        <button type="submit">Update Username</button>
+    </form>
+    <a th:href="@{'/profile/'+${username}}">Edit Profile</a>
+</body>
+</html>
