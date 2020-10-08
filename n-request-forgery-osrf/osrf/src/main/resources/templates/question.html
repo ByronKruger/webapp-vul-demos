@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Question</title>
+</head>
+<body>
+    <form action="/unsafeQuestion" method="post">
+        <input name="question" type="text">
+        <button type="submit">Ask Question</button>
+    </form>
+    <a th:href="@{'/questions/'+${question}}">View Question</a>
+</body>
+</html>
