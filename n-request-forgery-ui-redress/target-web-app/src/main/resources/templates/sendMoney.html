@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Send Money</title>
+    <script>
+        console.log(document.cookie);
+    </script>
+</head>
+<body>
+    <h3>Send Money:</h3>
+    <form action="/sendMoney" method="post">
+        <input type="text" name="account">
+        <input type="text" name="amount">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}">
+        <button type="submit">Send Money</button>
+    </form>
+</body>
+</html>
